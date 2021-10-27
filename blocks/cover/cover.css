@@ -1,0 +1,18 @@
+.cover {
+  grid-area: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-image: url(../../images/cover-trains.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cover::before {
+  content: '';
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  padding-top: 62.5%;
+}
